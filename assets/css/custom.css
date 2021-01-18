@@ -1168,6 +1168,14 @@ footer .logo-wrapper{
 #footer form label{
 	color: #fff;
 }
+
+
+@media (max-width: 767px) {
+    .contact-card {
+        z-index: 999999;
+    }
+}
+
 .contact-card{
 	display: flex;
 	flex-direction: column;
