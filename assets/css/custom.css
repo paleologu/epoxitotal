@@ -1,0 +1,1203 @@
+/*
+    Author     : IOIITCONSULT
+    colors:    base: #067073;
+               compound 1: #6298D9
+               compound 2: #004BA6
+               compound 3: #7F3C27
+               compound 4: #A60F00
+*/
+html{
+    width:100%;
+    height:100%;
+    margin: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: #fff;
+    font-weight: 300;
+    font-family: 'Oswald', sans-serif;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover{
+    text-decoration: none;
+}
+figure{
+    display: grid;
+}
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+.half{
+    width: 50%;
+}
+.header{
+    background:  url(http://localhost/epoxitotal/assets/images/header-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.header.home{
+    background-position: 50% 66%;
+    height: 65vh;
+}
+.carousel-container{
+    box-shadow: 0px 4px 30px;
+    z-index: 99;    
+}
+.carousel-2{
+    height:400px;
+}
+.carousel-2 img{
+    height: 400px;
+}
+.carousel-2 .slick-arrow{
+    display: none!important;
+}
+.carousel{
+    height: 35vh;
+    padding: 30px 0 70px 0;
+}
+.carousel img{
+    max-height: -webkit-fill-available;
+    max-height: -moz-available;
+    max-height: stretch;
+    max-height: 20vh;
+    margin:auto;
+}
+.carousel h3{
+    text-align: center;
+    font-size: 20px;
+}
+button.slick-prev:before, button.slick-next:before{
+    color: #828796;
+    font-size: 30px;
+}
+button.slick-prev{
+    left:0;
+}
+button.slick-next{
+    right:0;
+}
+button.slick-arrow{
+    z-index: 999;
+}
+.header#header:after {
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width:100%;
+    background-position:center;
+    background: linear-gradient(0deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.800717787114846) 100%);
+}
+.header-overlay{
+    display: none;
+    position: absolute;
+    top:0;
+    height: 100%;
+    width:100%;
+    background-position:center;
+    background: linear-gradient(0deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.800717787114846) 100%);
+}
+.page.header{
+    background: #fff;
+}
+.page.header .page-top-bar, .page.header .top-bar-item{
+    border-color: #eeeeee;
+}
+.page.header li.top-bar-item a {
+    color: #828796;
+}
+.title-bar{
+    /*margin-top: 94px;*/
+    height: 250px;
+    background: url(http://localhost/epoxitotal/assets/images/page-header2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: color-burn;
+}
+.title-inner{
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+.title-inner .heading-wrapper{
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    transform: translateY(-100%);
+    z-index: 1;
+}
+.title-overlay{
+    position: absolute;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255,255,255,0.4);
+    z-index: 0;
+}
+.heading{
+    text-align: left;
+    padding-left: 39px;
+    padding-bottom: 5px;
+}
+.wrapper{
+    max-width: 1200px;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.page-top-bar{
+    border-bottom: 1px solid black;
+    z-index: 2;
+    position: absolute;
+    display: none;
+}
+.top-bar-info{
+    text-align: justify;
+}
+.top-bar-item{
+    list-style: none;
+    display: inline-block;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding:10px;
+}
+.top-bar-item:first-of-type{
+    border-left: 1px solid black;
+    border-right: none;
+}
+.top-bar-item a{
+    color:#000;
+}
+.menu-bar{
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+.menu-bar > .wrapper{
+    text-align: justify;
+}
+div.menu-wrapper{
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.menu-bar .logo{
+    margin: 0;
+}
+.menu-item-title{
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 9px;
+    letter-spacing: 1.62px;
+    line-height: 1.2;
+    text-transform: capitalize;
+    color:#000;
+    margin: 13px;
+}
+.menu-item-title.selected{
+    color:#067073;
+    border-bottom: 2px solid #067073;
+}
+.menu-item-title:hover{
+    color:#067073;
+    border-bottom: 2px solid #067073;
+}
+.contact-strip.consultation input{
+    line-height: 30px;
+    font-size: 20px;
+    vertical-align: middle;
+}
+.contact-strip.consultation small{
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.contact-strip.consultation form{
+    display: inline-block;
+}
+.contact-strip.consultation .button-contact{
+    background: #067073;
+    padding: 14px 14px;
+    line-height: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+}
+.contact-strip.consultation .button-contact span{
+    color: #fff;
+}
+
+.menu-bar .logo-wrapper{
+    display: inline-block;
+}
+.logo-wrapper a {
+    padding:13px;
+}
+.logo-wrapper .logo-footer{
+    display: block;
+    margin: auto;
+    width: 232px;
+    position: relative;
+    padding-bottom: 85px;
+    background: transparent;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+}
+.logo-wrapper .logo-footer::after{
+    content: "";
+    width: 232px;
+    height: 232px;
+    position: absolute;
+    top: -115px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+    background: #fff;
+    border-radius: 50%;
+}
+.logo-wrapper .logo-footer.home-footer::after{
+    background: #f9f9f9 ;
+}
+.logo-footer{
+    display: block;
+    z-index: 9;
+}
+.logo-footer .logo{
+    display: block;
+    margin: auto;
+    vertical-align: top;
+    z-index: 99;
+    width: 188px;
+    position: relative;
+    padding-top: 10px;
+}
+.menu{
+    list-style: none;
+    display: block;
+}
+.menu-item{
+    display: inline-flex;
+}
+.phone-contact .menu-item-title span{
+    font-size:20px;
+    font-weight: 700;
+}
+.phone-contact a{
+    color:#067073;
+    background: #dadada;
+}
+.header-description{
+    padding-top: 100px;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 300;
+    font-stretch: 100%;
+    text-size-adjust: 100%;
+    color: #067073;
+}
+.header-description span{
+    color: #000;
+}
+.header-subdescription{
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 55px;
+    padding: 10px 10px 94px 10px;
+    display: block;
+}
+.header .nice.button{
+    position: absolute;
+    left: 30px;
+    transform: translateX(0%);
+    bottom: 50%;
+    z-index: 9;
+    font-size: 30px;
+    /* top: 50%; */
+    line-height: 40px;
+    /* padding: 100%; */
+    /* width: 215px; */
+    /* height: 215px; */
+    margin-left: 15px;
+    height: 200px;
+    border-radius: 100%;
+    white-space: nowrap;
+}
+.header .nice.button span{
+    padding: unset;
+    border: none;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+.contact.wrapper{
+    top:50%;
+}
+.contact-link{
+    display:block;
+    color:#067073;
+    padding-bottom: 52px;
+    font-size: 16px;
+    font-weight: 700;
+    font-stretch: 100%;
+
+}
+.contact-strip{
+    color: #fff;
+    background: #000;
+    text-align: center;
+    font-size: 26px;
+    line-height: 30px;
+    padding: 15px;
+    font-weight: 400;
+    position: relative;
+    z-index: 1;
+}
+.contact-strip span{
+    color:#067073;
+}
+.contact-strip .tel{
+    color:#067073;
+    padding: 13px 15px;
+    font-weight: 700;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.button{
+    background: #067073;
+    color: #fff;
+    padding: 14px 40px;
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+}
+.button span{
+    padding: 10px;
+    border: 2px solid #fff;
+}
+.no-padding{
+    padding: 0!important;
+}
+.image{
+    width:100%;
+}
+.left{
+    float:left;
+}
+.right{
+    float:right;
+}
+.white{
+    background:white;
+}
+.content-menu{
+    position: absolute;
+    top: 0;
+    list-style: none;
+}
+.gap{
+    height: 50px;
+}
+.inline-align{
+    font-size: 0;
+    display: inline-block;
+}
+.gradient-text{
+    padding: 50px 0;
+    color: white;
+}
+.gradient-image{
+    min-height: 50vh;
+    background: url('http://localhost/epoxitotal/assets/images/epoxy-flooring.jpg');
+    background-size: cover;
+    background-position: 100% 100%;
+    display: inline-table!important
+}
+.gradient-right{
+    background: -moz-linear-gradient(90deg, rgba(6,112,115,0) 19%, rgba(6,112,115,0.62) 65%, rgba(0,128,128,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(19%, rgba(6,112,115,0)), color-stop(65%, rgba(6,112,115,0.62)), color-stop(100%, rgba(0,128,128,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(90deg, rgba(6,112,115,0) 19%, rgba(6,112,115,0.62) 65%, rgba(0,128,128,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(90deg, rgba(6,112,115,0) 19%, rgba(6,112,115,0.62) 65%, rgba(0,128,128,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(90deg, rgba(6,112,115,0) 19%, rgba(6,112,115,0.62) 65%, rgba(0,128,128,1) 100%); /* ie10+ */
+    background: linear-gradient(90deg, rgba(6,112,115,0) 19%, rgba(6,112,115,0.62) 65%, rgba(0,128,128,1) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008080', endColorstr='#067073',GradientType=1 ); /* ie6-9 */
+    width:100%;
+    height:100%;
+    display: table-row;
+}
+.content-menu-right{
+    right: 0;
+}
+.content-menu-left{
+    left: 0;
+}
+.content-menu li{
+    background: #067073;
+    padding: 15px 40px;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 1px;
+}
+.box-wrapper{
+    display: flow-root;
+}
+.box-content{
+    padding: 20px;
+}
+.box-content h3{
+    margin-bottom: 25px;
+}
+.box-content p{
+    text-align: justify;
+}
+.box-content ul{
+    padding: 0px 20px;
+}
+.box-content.sub-box-content h3{
+    color: #fff;
+    font-weight: 400;
+}
+.box-content.fat-wrapper{
+    padding:75px 120px;
+    text-align: center;
+}
+.box-content.fat-wrapper h4{
+    font:30px/26px 'Oswald', sans-serif;
+    padding: 22px 0;
+}
+a.more-info{
+    font-weight: 400;
+    color: #000;
+    text-transform: uppercase;
+    margin: 20px 0px;
+    display: block;
+}
+.blue-overlay{
+    position: absolute;
+    background: rgba(6,112,115,0.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+.blue-overlay:hover{
+    background: transparent;
+    transition: 0.3s;
+}
+.portfolio{
+    background: #f5f5f5;
+    padding-top: 50px;
+    text-align: center;
+}
+.portfolio.box-content h3{
+    font-size: 60px;
+    color: #000;
+    padding-bottom: 30px;
+    margin-top: 50px;
+}
+.portfolio p {
+    text-align: center;
+    padding-bottom: 35px;
+}
+a.nice.button{
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    margin-bottom: 35px;
+}
+.toggle{
+    height: 100%;
+    width: 40px;
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    transition: 0.5s;
+}
+.grey{
+    background: #f5f5f5;
+}
+.toggle:hover{
+    background: rgba(0,0,0,0.5);
+}
+.previous{
+    left: 0;
+}
+.previous-button{
+    background: url('../images/arrows/prev-arrow.png');
+}
+.next-button{
+    background: url('../images/arrows/next-arrow.png');
+}
+.down-button{
+    background: url('../images/arrows/down-arrow.png');
+}
+.toggle-button{
+    height: 100%;
+    width: 100%;
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.next{
+    right: 0;
+}
+.logo{
+    display: inline-block;
+    max-width: 100%;
+}
+div.sticky div.dark-logo, div.unstick div.dark-logo{
+    display: inline-block;
+}
+div.sticky div.color-logo, div.unstick div.color-logo{
+    display: none;
+}
+.menu-bar div.dark-logo{
+    display: none;
+}
+.client-portfolio{
+    z-index: 9;
+    padding-bottom: 50px;
+}
+footer {
+    width: 100%;
+    background: #050608;
+    text-align: center;
+    overflow: hidden;
+    z-index: 2;
+    position: relative;
+}
+.footer-nav a{
+    color: #fff;
+}
+.footer-nav li {
+    display: inline-block;
+    margin: 20px;
+}
+.form-container{
+    color: white;
+    margin-top: 70px;
+}
+.form-container table{
+    margin: auto;
+}
+.contact-button-container{
+    margin-top: 50px;
+}
+.basic-info{
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
+td{
+    border-bottom: none!important;
+    border-left: none!important;
+    border-right: none!important;
+    border-top: none!important;
+    padding:0!important;
+}
+td:first-child {
+    width: 127px;
+}
+.day.today td{
+    font-weight: 900;
+    color: white;
+    white-space: nowrap;
+    display: inline-flex;
+}
+.footer-form{
+    position:absolute;
+    top:-70px;
+    left:-200vh;
+    width:100%;
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
+.wpcf7{
+    background: #050608;
+    padding:30px 20px!important;
+}
+.wpcf7 p{
+    position:relative;
+    display:table;
+    margin:auto;
+}
+.wpcf7 textarea{
+	width: 395px;
+	max-width: 100%;
+}
+.wpcf7 input, .wpcf7 textarea{
+    font-weight:500;
+}
+wpcf7-response-output {
+    color: white!important;
+}
+.slide-in{
+    left:0px;
+    animation-duration: 0.7s;
+    animation-name: slidein;
+}
+.slide-out{
+    animation-duration: 0.7s;
+    animation-name: slideout;
+}
+.slide-left{
+    left:0px;
+    animation-duration: 0.7s;
+    animation-name: slide-left;
+}
+.slide-right{
+    animation-duration: 0.7s;
+    animation-name: slide-right;
+}
+.hide{
+    display:none;
+}
+.current-day .toggle-button{
+    width: 20px;
+    height: 20px;
+    cursor:pointer;
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
+.current-day .toggle-button.up{
+    -moz-transform: rotate(1800deg);
+    -webkit-transform: rotate(1800deg);
+    transform:rotate(180deg);
+
+}
+.current-day .toggle-button.down{
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform:rotate(0deg);
+}
+@-moz-keyframes spinup { 100% { -moz-transform: rotate(1800deg); } }
+@-webkit-keyframes spinup { 100% { -webkit-transform: rotate(1800deg); } }
+@keyframes spinup { 100% { -webkit-transform: rotate(180deg); transform:rotate(180deg); } }
+@-moz-keyframes spindown { 100% { -moz-transform: rotate(1800deg); } }
+@-webkit-keyframes spindown { 100% { -webkit-transform: rotate(1800deg); } }
+@keyframes spindown { 100% { -webkit-transform: rotate(180deg); transform:rotate(180deg); } }
+@keyframes slidein {
+    from {
+        left: -100vh;
+    }
+
+    to {
+        left: 0;
+    }
+}
+@keyframes slideout {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: -100vh;
+    }
+}
+.menu-contact{
+    color: #fff;
+    padding: 30px;
+}
+.menu-contact li{
+    display: inline-block;
+}
+.menu-contact a{
+    color: #fff;
+}
+.menu-contact figure{
+    display:  block;
+}
+.copyright-sec{
+    color: #fff;
+    background: #585858
+}
+.copyright-sec a{
+    font-size: 16px;
+    color:#000;
+}
+.company-details{
+    background: url('http://localhost/epoxitotal/assets/images/despre-noi-imagini/career-banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.company-details div{
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+}
+.company-details small{
+    text-align: center;
+    font-size: 26px;
+    line-height: 30px;
+    color: #fff;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    padding-top: 25px;
+    position: relative;
+    margin: auto;
+}
+.company-details .company-details-wrapper small::before{
+    content:"";
+    width: 35px;
+    height: 35px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -22px;
+    background: url(http://localhost/epoxitotal/assets/images/icons/tick.png) no-repeat 0 0;
+}
+.company-details .company-statement{
+    display: block;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+    padding: 60px 0;
+    color: #fff;
+    text-align: center;
+}
+.company-details span{
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    margin-top: 20px;
+    position: relative;
+    display: block;
+    text-align: center;
+    padding-bottom: 80px;
+}
+.company-details div.company-details-wrapper{
+    max-width: 1200px;
+    margin: auto;
+    display: block;
+}
+.company-details::after{
+    content:"";
+    background: rgba(6,112,115,0.8);
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.unstick{
+    position: fixed;
+    width: 100%;
+    background: white;
+    top: 0;
+    transform: translateY(-100%);
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
+    animation:slide-up 0.7s;
+    z-index: 999;
+}
+.sticky{
+    position: fixed;
+    display: inline-table;
+    width: 100%;
+    background: white;
+    top: 0;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
+    animation:slide-down 0.7s;
+    z-index: 999;
+}
+.show{
+    display: block!important;
+}
+.header{
+        background: url(http://localhost/epoxitotal/assets/images/header-background-min.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+.mobile-only{
+    display:none;
+}
+.mobile-menu{
+    display: none;
+}
+.menu-contact li{
+    width: 24%;
+}
+#logo img{
+    height: 130px;
+}   
+.box-content{
+    padding: 20px;
+}
+.box-content h3{
+    font-size: 42px;
+    line-height: 42px;
+    color: #067073;
+    font-weight: 300;
+    text-align: center;
+}
+.box-content p{
+    line-height: 36px;
+    font-size: 20px
+}
+.box-content.sub-box-content h3{
+    line-height: 56px;
+    font-size: 32px;
+}
+.sticky-contact{
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translate(0%, -50%);
+    z-index: 999999;
+    background: #067073;
+    box-shadow: -2px 4px 5px;
+}
+.sticky-contact ul{
+    list-style: none;
+    color: white;
+    padding:10px;
+}
+.sticky-contact ul a{
+    color: white;
+}
+@media only screen and (max-width:1400px){
+    
+}
+@media only screen and (max-width:687px){
+    .header{
+        background: url(http://localhost/epoxitotal/assets/images/header-background-min-min.jpg);
+    }
+    .header-description{
+        padding-top: 100px;
+    }
+    .mobile-only{
+        display: block;
+    }
+    no-mobile{
+        display: none;
+    }
+    .mobile-menu{
+        display:inline-block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    #hamburger-menu{
+        display: inline-block;
+        width: 25px;
+        height: 16px;
+        cursor: pointer;
+    }
+    #hamburger-menu i {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: rgb(23, 25, 29);
+    }
+    #hamburger-menu i:nth-child(2) {
+        margin: 5px 0px;
+    }
+    .menu{
+        display:none;
+    }
+    div.menu-wrapper{
+        display: inline-block;
+        position: absolute;
+        transform: unset;
+        left: 0;
+        top: 100%;
+        float: left;
+        background: white;
+    }
+    li.menu-item{
+        display: inline-flex;
+        width: 100%;
+        text-align: center;
+        padding:10px;
+    }
+    .menu-item-link{
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+    .menu-item-title{
+        font-size: 28px;
+        font-weight: 300;
+    }
+    .menu-item-title.selected{
+        border-bottom: unset;
+    }
+    .box-content h3{
+        font-size: 48px;
+    }
+    .box-content.fat-wrapper{
+        padding: 15px;
+    }
+
+}
+/*DESPRE NOI*/
+.despre-noi-image{
+    max-height: 500px;
+    height: 500px;
+    background-size: cover;
+    background-position: 50% 67%;
+}
+.despre-noi-image-1{
+    background-image: url(http://localhost/epoxitotal/assets/images/despre-noi-imagini/20181011_213633.jpg);
+}
+.despre-noi-image-2{
+    background-image: url(http://localhost/epoxitotal/assets/images/despre-noi-imagini/IMG-20180427-WA0003.jpg);
+}
+/*DESPRE NOI*/
+/*SERVICES*/
+.service-wrapper{
+    margin:50px 0;
+    padding: 0px!important;
+}
+.service-container{
+    padding:15px;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
+}
+div.service{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    margin:10px 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+div.service.description{
+    padding: 0;
+}
+div.service h2{
+    margin: 20px 0;
+}
+div.service img{
+    width: 100%;
+}
+div.service .service-text{
+    margin: 15px 0;
+}
+.pardoseli{
+    background: url("http://localhost/epoxitotal/assets/images/pardoseli-service.jpg");
+}
+.tavan{
+    background: url("http://localhost/epoxitotal/assets/images/tavan-service.jpg");
+}
+.marcaje{
+    background: url("http://localhost/epoxitotal/assets/images/marcaje.jpg");
+}
+.hidroizolatii{
+    background: url("http://localhost/epoxitotal/assets/images/hidroizolatii.jpg");
+}
+.covor{
+    background: url("http://localhost/epoxitotal/assets/images/pardoseli-service.jpg");
+}
+/*SERVICES*/
+
+/*CONTACT*/
+#map{
+    height: 400px;
+}
+div.map-container{
+    padding: 0;
+}
+.contact{
+    text-align: center;
+}
+.contact div.row{
+    margin: unset;
+    text-align: left;
+    display: inline-block;
+    padding-top: 15px;
+}
+.row-wrapper{
+    margin:auto;
+}
+.contact-form{
+    display: inline-block;
+    max-width: 100%;
+    width: 386px;
+    margin-top: 50px;
+}
+.contact-form input,.contact-form textarea{
+    width: 100%;
+    background: #fdfdfd;
+    font-size: 18px;
+    font-family: 'Arial';
+    color: #a9a9a9;
+    font-family: 'OpenSans-Regular';
+    border: 1px solid #ddd;
+    padding: 15px 20px;
+    display: inline-block;
+}
+.contact-info{
+    margin-top: 50px;
+}
+.contact-info div.row{
+    display: block;
+    margin: 50px;
+    vertical-align: middle;
+
+}
+.contact-info a{
+    left: 40px;
+    position: relative;
+    font-size: 25px;
+    font-weight: 300;
+    color: #067073;
+    vertical-align: middle;
+}
+.contact-info a::before{
+    content: "";
+    height: 41px;
+    width: 41px;
+    left: -52px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+a.phone{
+    color: #000;
+}
+a.address{
+    font-style: normal;
+    font-size: 18px;
+    color: #000;
+}
+a.phone::before{
+    background: url('http://localhost/epoxitotal/assets/images/icons/phone-icon.png');
+    background-repeat: no-repeat;
+}
+a.mail::before{
+    background: url('http://localhost/epoxitotal/assets/images/icons/mail-icon.png');
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 46px;
+    left:-54px;
+}
+a.address::before{
+    background: url('http://localhost/epoxitotal/assets/images/icons/address-icon.png');
+    background-repeat: no-repeat;
+    height: 41px;
+    width: 29px;
+    left:-44px;
+}
+.contact-title h2{
+    font-size: 34px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: 100%;
+    color: #067073;
+    margin-top: 50px;
+}
+.contact div.button-row{
+    display: block;
+    text-align: right;
+    padding: 15px;
+}
+.contact-us{
+    font-size: 16px;
+}
+footer .logo-wrapper{
+    /*padding-bottom: 110px;*/
+}
+/*CONTACT*/
+
+/*PORTFOLIO*/
+.portfolio-item{
+    float: left;
+}
+.portfolio-item a{
+    width: 100%;
+}
+.portfolio-item img{
+    width: 100%;
+}
+/*PORTFOLIO*/
+/*COMMON*/
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    } 
+    100% {
+        opacity: 0.9;
+        transform: translateY(0);
+    } 
+}
+@keyframes slide-up {
+    0% {
+        opacity: 0.9;
+        transform: translateY(0);
+    } 
+    100% {
+        opacity:0;
+        transform: translateY(-100%);
+    } 
+}
+.map-container{
+    
+}
+
+#footer form label{
+	color: #fff;
+}
+
+/*#logo{
+    display: block;
+    text-align: center;
+    margin: auto;
+    width:100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    z-index: 1; 
+}*/ /*.menu-line{
+    display: block;
+    clear: both;
+    vertical-align: top;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+.header.page .menu-line{
+    padding-bottom: 80px;
+}
+.menu-item-link{
+    padding: 15px;
+    background: #000;
+    color: #fff;
+}
+.menu-item-link.selected{
+    background: #067073;
+}*/
