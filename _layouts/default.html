@@ -6,6 +6,7 @@
 	<title>{{ page.title }}</title>
 	<link rel=stylesheet href='{{ site.baseurl }}/assets/css/vendor.css'>
 	<link rel=stylesheet href='{{ site.baseurl }}/assets/css/style.css'>
+	<link rel=stylesheet href='{{ site.baseurl }}/assets/css/custom.css'>
 <!-- 	<link rel=stylesheet href={{ site.baseurl }}/assets/fonts/font-awesome/css/font-awesome.css>
  -->
 
@@ -22,8 +23,8 @@
 
 						<span class='navbar-text text-uppercase d-flex align-items-center'>
 							<span class='text-white-70 mr-1'>
-								<i class='material-icons fs-1'>phone</i> 0762369009
-								<i class='material-icons fs-1'>email</i> oferta@epoxitotal.ro
+								<a href="tel:0762369009"><i class='material-icons fs-1'>phone</i> 0762369009</a>
+								<a href="mailtp:oferta@epoxitotal.ro"><i class='material-icons fs-1'>email</i> oferta@epoxitotal.ro</a>
 							</span>
 						</span>
 
@@ -87,6 +88,19 @@
 				</div>
 			</div>
 		</div>
+		<div class="contact-card">
+			<div class="contact-card-item">
+				<div class="contact-image">
+					<a href="http://instagram.com/"><img src="profi/assets/images/icons/instagram-logo.png" alt="instagram"></a>
+				</div>
+				<div class="contact-image">
+					<a href="tel:0762369009"><img src="profi/assets/images/icons/phone-logo.png" alt="phone"></a>
+				</div>
+				<div class="contact-image">
+					<a href="http://youtube.com/"><img src="profi/assets/images/icons/youtube-logo.png" alt="youtube"></a>
+				</div>
+			</div>
+		</div>
 	</section>
 
 
@@ -140,5 +154,25 @@
 	</script>
 	<script src='{{ site.baseurl }}/assets/js/app.js'>
 	</script>
+	<script src='{{ site.baseurl }}/assets/js/custom.js'>
+	</script>
+	<script src='{{ site.baseurl }}/assets/js/home.js'>
+	</script>
+	<script>
+		function map() {
+			var mapProp = {
+				center: new google.maps.LatLng(44.430017, 26.1053162),
+				zoom: 16,
+			};
+
+			var map = new google.maps.Map(document.getElementById("map"), mapProp);
+			var marker = new google.maps.Marker({
+				position: {lat: 44.430017, lng: 26.1053162},
+				map: map,
+				title: "EpoxiTotal"
+			});
+		}
+	</script>
+	<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCs2aLx4rV49mbXMH6FqVpN-4RG7DEUiTI&callback=map'></script>
 </body>
 </html>
