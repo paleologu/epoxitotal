@@ -1170,12 +1170,6 @@ footer .logo-wrapper{
 }
 
 
-@media (max-width: 767px) {
-    .contact-card {
-        z-index: 999999;
-    }
-}
-
 .contact-card{
 	display: flex;
 	flex-direction: column;
@@ -1185,6 +1179,14 @@ footer .logo-wrapper{
 	transform: translate(-50%, -50%);
 	z-index: 10;
 }
+
+
+@media (max-width: 767px) {
+    .contact-card {
+        z-index: 999999;
+    }
+}
+
 .contact-image{
 	padding: 5px 0;
 }
