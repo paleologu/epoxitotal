@@ -587,7 +587,7 @@ footer {
     background: #050608;
     text-align: center;
     overflow: hidden;
-    z-index: 2;
+    z-index: 11;
     position: relative;
 }
 .footer-nav a{
@@ -1168,7 +1168,21 @@ footer .logo-wrapper{
 #footer form label{
 	color: #fff;
 }
-
+.contact-card{
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	top: 50%;
+	right: -20px;
+	transform: translate(-50%, -50%);
+	z-index: 10;
+}
+.contact-image{
+	padding: 5px 0;
+}
+.wpcf7-form p{
+	max-width: 100%;
+}
 /*#logo{
     display: block;
     text-align: center;
