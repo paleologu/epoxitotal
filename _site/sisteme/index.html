@@ -22,7 +22,7 @@
 -->
 
 
-</head>
+<script defer src="turbolinks.js"></script></head>
 
 <body data-spy=scroll data-target=#header-navbar data-offset=140>
 
@@ -919,11 +919,16 @@
 
 				</div>
 
-				<div class="col-md-6 map-container left">
+				<div class="col-md-6 left">
 
-					<div id="map">
-
-					</div>
+<div class="gmap pt-4">
+	<div class="gmap-embed">
+		<div class="gmap-embed-sizing-helper">
+		</div>
+		<div class="gmap-embed-inner"
+		data-options="{&quot;center&quot;:{&quot;lat&quot;:44.425840,&quot;lng&quot;:26.016470}}">
+	</div>
+</div>
 
 				</div>
 
@@ -1034,34 +1039,11 @@
 
 	</script>
 
-	<script src='/assets/js/custom.js'>
-
-	</script>
 
 	<script src='/assets/js/home.js'>
 
 	</script>
 
-	<script>
-
-		function map() {
-			var mapProp = {
-				center: new google.maps.LatLng(44.430017, 26.1053162),
-				zoom: 16,
-			};
-
-			var map = new google.maps.Map(document.getElementById("map"), mapProp);
-			var marker = new google.maps.Marker({
-				position: {lat: 44.430017, lng: 26.1053162},
-				map: map,
-				title: "EpoxiTotal"
-			});
-		}
-	</script>
-
-	<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCs2aLx4rV49mbXMH6FqVpN-4RG7DEUiTI&callback=map'>
-
-	</script>
 
 
 
