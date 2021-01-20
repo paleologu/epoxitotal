@@ -526,12 +526,9 @@ turbolinks: false
   		console.log("loaded");
 $('.nav-tabs').on('shown.bs.tab','a', function (e) {
   console.log("shown");
-  var selector = e.target.getAttribute('href');
   // trigger resize on tab pane
-  $(window).trigger('resize');
-})
-
-
+  window.dispatchEvent(new Event('resize'));
+});		
 
   	});
   </script>
