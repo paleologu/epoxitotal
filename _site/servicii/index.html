@@ -17,14 +17,16 @@
 
 	<link rel=stylesheet href='/assets/css/custom.css'>
 
-<!-- 	<link rel=stylesheet href=/assets/fonts/font-awesome/css/font-awesome.css>
+	<link rel=stylesheet href='/assets/css/fa.scss'>
 
--->
-
+<link rel="icon" 
+      type="image/png" 
+      href='/assets/images/favicon.png' />
 
 </head>
 
-<body data-spy=scroll data-target=#header-navbar data-offset=140>
+<body data-spy=scroll data-target=#header-navbar data-offset=140 position="relative">
+
 
 	<div id=page-start-anchor>
 
@@ -46,13 +48,13 @@
 
 							<span class='text-white-70 mr-1'>
 
-								<a href="tel:0762369009">
+								<a href="tel:0762369009" class="text-white">
 
 									<i class='material-icons fs-1'>
 									phone</i>
 								0762369009</a>
 
-								<a href="mailtp:oferta@epoxitotal.ro">
+								<a href="mailtp:oferta@epoxitotal.ro" class="text-white">
 
 									<i class='material-icons fs-1'>
 									email</i>
@@ -181,7 +183,7 @@
 
 							</div>
 
-							<a class='btn btn-outline-primary text-nowrap' href='/contact' data-toggle=none target=_blank>
+							<a class='btn btn-primary text-nowrap' href='/contact' data-toggle=none target=_blank>
 							Contact</a>
 
 
@@ -197,43 +199,6 @@
 
 		</div>
 
-		<div class="contact-card">
-
-			<div class="contact-card-item">
-
-				<div class="contact-image">
-
-					<a href="http://instagram.com/" target="_blank">
-
-						<img src="/assets/images/icons/instagram-logo.png" alt="instagram">
-
-					</a>
-
-				</div>
-
-				<div class="contact-image">
-
-					<a href="tel:0762369009">
-
-						<img src="/assets/images/icons/phone-logo.png" alt="phone">
-
-					</a>
-
-				</div>
-
-				<div class="contact-image">
-
-					<a href="http://youtube.com/" target="_blank">
-
-						<img src="/assets/images/icons/youtube-logo.png" alt="youtube">
-
-					</a>
-
-				</div>
-
-			</div>
-
-		</div>
 
 	</section>
 
@@ -261,7 +226,7 @@
 			<h1 class="fs-10 fs-lg-11 mt-6 mb-16 font-weight-bold text-white">
 			Servicii</h1>
 
-			<a href='/contact' class="btn btn-lg btn-primary">
+			<a href='http://localhost:4000/contact' class="btn btn-lg btn-primary">
 			Cere oferta</a>
 
 		</div>
@@ -283,37 +248,37 @@
 			<div class="nav nav-tabs radio-buttons-group border-0 shadow-sm rounded">
 
 				<a class="btn btn-light selected" data-toggle=tab href="#antistatice">
-				Antistatice
+					Antistatice
 				</a>
 				<a class="btn btn-light" data-toggle="tab" href="#terrazzo">
-				Aplicare Terrazzo
+					Aplicare Terrazzo
 				</a>
 				<a class="btn btn-light" data-toggle="tab" href="#barrisol">
-				Barrisol
+					Barrisol
 				</a>
 				<a class="btn btn-light" data-toggle="tab" href="#decorative">
-				Decorative
+					Decorative
 				</a>
 				<a class="btn btn-light" data-toggle="tab" href="#epoxidice">
-				Pardoseli Epoxidice
+					Pardoseli Epoxidice
 				</a>
 				<a class="btn btn-light" data-toggle="tab" href="#marcaje">
-				Marcaje
+					Marcaje
 				</a>
 				<a class="btn btn-light" data-toggle="tab" href="#microciment">
-				Microciment
+					Microciment
 				</a>
 				<a class="btn btn-light" data-toggle="tab" href="#poliuretan">
-				Poliuretan
+					Poliuretan
 				</a>
 				<a class="btn btn-light" data-toggle="tab" href="#prefabricate">
-				Prefabricate
+					Prefabricate
 				</a>
 				<a class="btn btn-light" data-toggle="tab" href="#termohidro">
-				Termo & Hidro Instalatii
+					Termo & Hidro Instalatii
 				</a>
 				<a class="btn btn-light" data-toggle="tab" href="#vopsitorie">
-				Vopsitorie Exterioara
+					Vopsitorie Exterioara
 				</a>
 
 			</div>
@@ -629,7 +594,7 @@
 
 		<div class="mt-19 mt-lg-20 text-center">
 
-			<a href='/contact' class="btn btn-lg btn-primary">
+			<a href='http://localhost:4000/contact' class="btn btn-lg btn-primary">
 			Cere oferta</a>
 
 		</div>
@@ -746,25 +711,24 @@
 
 
 <script
-  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
-  crossorigin="anonymous"></script>
+src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+crossorigin="anonymous"></script>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js" integrity="sha512-cA8gcgtYJ+JYqUe+j2JXl6J3jbamcMQfPe0JOmQGDescd+zqXwwgneDzniOd3k8PcO7EtTW6jA7L4Bhx03SXoA==" crossorigin="anonymous"></script>
 
 
-  <script type="text/javascript">
-  	$(document).ready(function(){
-  		console.log("loaded");
-$('.nav-tabs').on('shown.bs.tab','a', function (e) {
-  console.log("shown");
+<script type="text/javascript">
+	$(document).ready(function(){
+		console.log("loaded");
+		$('.nav-tabs').on('shown.bs.tab','a', function (e) {
+			console.log("shown");
   // trigger resize on tab pane
   window.dispatchEvent(new Event('resize'));
 });		
-
-  	});
-  </script>
+	});
+</script>
 
 
 
@@ -1107,14 +1071,14 @@ $('.nav-tabs').on('shown.bs.tab','a', function (e) {
 
 				<div class="col-md-6 left">
 
-<div class="gmap pt-4">
-	<div class="gmap-embed">
-		<div class="gmap-embed-sizing-helper">
-		</div>
-		<div class="gmap-embed-inner"
-		data-options="{&quot;center&quot;:{&quot;lat&quot;:44.425840,&quot;lng&quot;:26.016470}}">
-	</div>
-</div>
+					<div class="gmap pt-4">
+						<div class="gmap-embed">
+							<div class="gmap-embed-sizing-helper">
+							</div>
+							<div class="gmap-embed-inner"
+							data-options="{&quot;center&quot;:{&quot;lat&quot;:44.425840,&quot;lng&quot;:26.016470}}">
+						</div>
+					</div>
 
 				</div>
 
@@ -1212,6 +1176,17 @@ $('.nav-tabs').on('shown.bs.tab','a', function (e) {
 	</section>
 
 
+<div class="btn-group-vertical back-to-top">
+	<a href="#" class="btn btn-primary btn-round aos-init aos-animate" data-smooth-scroll="" data-aos="fade-up" data-aos-offset="2000" data-aos-mirror="true" data-aos-once="false">
+		<i class='material-icons'>phone</i>
+	</a>
+	<a href="#" class="btn btn-primary btn-round aos-init aos-animate" data-smooth-scroll="" data-aos="fade-up" data-aos-offset="2000" data-aos-mirror="true" data-aos-once="false">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="2em" height="2em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3z" fill="white"/></svg>
+	</a>
+	<a href="#" class="btn btn-primary btn-round aos-init aos-animate" data-smooth-scroll="" data-aos="fade-up" data-aos-offset="2000" data-aos-mirror="true" data-aos-once="false">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="2em" height="2em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><path d="M941.3 296.1a112.3 112.3 0 0 0-79.2-79.3C792.2 198 512 198 512 198s-280.2 0-350.1 18.7A112.12 112.12 0 0 0 82.7 296C64 366 64 512 64 512s0 146 18.7 215.9c10.3 38.6 40.7 69 79.2 79.3C231.8 826 512 826 512 826s280.2 0 350.1-18.8c38.6-10.3 68.9-40.7 79.2-79.3C960 658 960 512 960 512s0-146-18.7-215.9zM423 646V378l232 133l-232 135z" fill="white"/></svg>
+	</a>
+</div>
 
 	<script src='/assets/js/vendor.js'>
 
@@ -1231,7 +1206,17 @@ $('.nav-tabs').on('shown.bs.tab','a', function (e) {
 	</script>
 
 
-
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(window).scroll(function() {
+				if ($(document).scrollTop() > 50) {
+					$('#header-nav').addClass('scrolled');
+				} else {
+					$('#header-nav').removeClass('scrolled');
+				}
+			});
+		});
+	</script>
 
 
 </body>

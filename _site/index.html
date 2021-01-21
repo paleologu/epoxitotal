@@ -17,14 +17,16 @@
 
 	<link rel=stylesheet href='/assets/css/custom.css'>
 
-<!-- 	<link rel=stylesheet href=/assets/fonts/font-awesome/css/font-awesome.css>
+	<link rel=stylesheet href='/assets/css/fa.scss'>
 
--->
-
+<link rel="icon" 
+      type="image/png" 
+      href='/assets/images/favicon.png' />
 
 <script defer src="/turbolinks.js"></script></head>
 
-<body data-spy=scroll data-target=#header-navbar data-offset=140>
+<body data-spy=scroll data-target=#header-navbar data-offset=140 position="relative">
+
 
 	<div id=page-start-anchor>
 
@@ -46,13 +48,13 @@
 
 							<span class='text-white-70 mr-1'>
 
-								<a href="tel:0762369009">
+								<a href="tel:0762369009" class="text-white">
 
 									<i class='material-icons fs-1'>
 									phone</i>
 								0762369009</a>
 
-								<a href="mailtp:oferta@epoxitotal.ro">
+								<a href="mailtp:oferta@epoxitotal.ro" class="text-white">
 
 									<i class='material-icons fs-1'>
 									email</i>
@@ -181,7 +183,7 @@
 
 							</div>
 
-							<a class='btn btn-outline-primary text-nowrap' href='/contact' data-toggle=none target=_blank>
+							<a class='btn btn-primary text-nowrap' href='/contact' data-toggle=none target=_blank>
 							Contact</a>
 
 
@@ -197,43 +199,6 @@
 
 		</div>
 
-		<div class="contact-card">
-
-			<div class="contact-card-item">
-
-				<div class="contact-image">
-
-					<a href="http://instagram.com/" target="_blank">
-
-						<img src="/assets/images/icons/instagram-logo.png" alt="instagram">
-
-					</a>
-
-				</div>
-
-				<div class="contact-image">
-
-					<a href="tel:0762369009">
-
-						<img src="/assets/images/icons/phone-logo.png" alt="phone">
-
-					</a>
-
-				</div>
-
-				<div class="contact-image">
-
-					<a href="http://youtube.com/" target="_blank">
-
-						<img src="/assets/images/icons/youtube-logo.png" alt="youtube">
-
-					</a>
-
-				</div>
-
-			</div>
-
-		</div>
 
 	</section>
 
@@ -261,17 +226,17 @@
 					<div class="card demo-card">
 						<div class="card-body">
 							<img class="rounded-circle" src="/images/landing/materials/antiderapant.jpg">
-							<h3 class="mt-9 mb-0 text-black">Antiderapant</h3>
+							<h3 class="mt-9 mb-0 text-black text-center">Antiderapant</h3>
 						</div>
 						<a href="" target="" class="card-link-overlay">
 						</a>
 					</div>
 				</article>
-				<article class="col-6 col-sm col-md col-lg mb-12 mb-md-13 mb-lg-14">
+				<article class="col-6 	col-sm col-md col-lg mb-12 mb-md-13 mb-lg-14">
 					<div class="card demo-card">
 						<div class="card-body">
 							<img class="rounded-circle" src="/images/landing/materials/autonivelant.jpg">
-							<h3 class="mt-9 mb-0 text-black">Autonivelant</h3>
+							<h3 class="mt-9 mb-0 text-black text-center">Autonivelant</h3>
 						</div>
 						<a href="" target="" class="card-link-overlay">
 						</a>
@@ -282,7 +247,7 @@
 					<div class="card demo-card">
 						<div class="card-body">
 							<img class="rounded-circle" src="/images/landing/materials/imagine.jpg">
-							<h3 class="mt-9 mb-0 text-black">Imagine</h3>
+							<h3 class="mt-9 mb-0 text-black text-center">Imagine</h3>
 						</div>
 						<a href="" target="" class="card-link-overlay">
 						</a>
@@ -293,7 +258,7 @@
 					<div class="card demo-card">
 						<div class="card-body">
 							<img class="rounded-circle" src="/images/landing/materials/microciment.jpg">
-							<h3 class="mt-9 mb-0 text-black">Microciment</h3>
+							<h3 class="mt-9 mb-0 text-black text-center">Microciment</h3>
 						</div>
 						<a href="/microciment" target="_blank" class="card-link-overlay">
 						</a>
@@ -303,7 +268,7 @@
 					<div class="card demo-card">
 						<div class="card-body">
 							<img class="rounded-circle" src="/images/landing/materials/terrazzo.jpg">
-							<h3 class="mt-9 mb-0 text-black">Terrazzo</h3>
+							<h3 class="mt-9 mb-0 text-black text-center">Terrazzo</h3>
 						</div>
 						<a href="/terrazzo" target="_blank" class="card-link-overlay">
 						</a>
@@ -413,11 +378,11 @@
 
 
 
-		<section class="section bg-secondary" id=our-menu>
+		<section class="section bg-secondary pt-14" id=our-menu>
 			<div class="section-content container">
 				<h1 class="mb-17 text-center">Servicii</h1>
 				<div class="d-flex justify-content-center">
-					<div class="radio-buttons-group border-0" data-toggle=shuffle-grid data-target=#our-menu-grid>
+					<div class="radio-buttons-group border-0 rounded" data-toggle=shuffle-grid data-target=#our-menu-grid>
 						<button class="btn btn-light selected" data-value=all>Toate</button> <button class="btn btn-light" data-value=terrazzo>Terrazzo</button> <button class="btn btn-light" data-value=microciment>Microciment</button> <button class="btn btn-light" data-value=rasini>Rasini</button>
 					</div>
 				</div>
@@ -425,10 +390,10 @@
 
 
 					<div class=shuffle-grid-item data-groups=terrazzo,rasini,microciment>
-						<div class="card border-0">
+						<div class="card border-0 rounded">
 							<div class="row no-gutters">
 								<div class="col-lg-4 position-relative">
-									<img src="/images/galerie/1.jpg" class=img-overlay alt=photo>
+									<img src="/images/servicii/epoxidice/1.jpg" class=img-overlay alt=photo>
 								</div>
 								<div class=col-lg-8>
 									<div class="card-body py-11 px-14">
@@ -441,11 +406,11 @@
 							</div>
 						</div>
 					</div>
-					<div class=shuffle-grid-item data-groups=terrazzo>
-						<div class="card border-0">
+					<div class="shuffle-grid-item" data-groups=terrazzo>
+						<div class="card border-0 rounded">
 							<div class="row no-gutters">
 								<div class="col-lg-4 position-relative">
-									<img src="/images/galerie/1.jpg" class=img-overlay alt=photo>
+									<img src="/images/servicii/poliuretan/1.jpg" class=img-overlay alt=photo>
 								</div>
 								<div class=col-lg-8>
 									<div class="card-body py-11 px-14">
@@ -459,10 +424,10 @@
 						</div>
 					</div>
 					<div class=shuffle-grid-item data-groups=rasini>
-						<div class="card border-0">
+						<div class="card border-0 rounded">
 							<div class="row no-gutters">
 								<div class="col-lg-4 position-relative">
-									<img src="/images/galerie/1.jpg" class=img-overlay alt=photo>
+									<img src="/images/servicii/decorative/1.jpg" class=img-overlay alt=photo>
 								</div>
 								<div class=col-lg-8>
 									<div class="card-body py-11 px-14">
@@ -476,10 +441,10 @@
 						</div>
 					</div>
 					<div class=shuffle-grid-item data-groups=microciment,terrazzo>
-						<div class="card border-0">
+						<div class="card border-0 rounded">
 							<div class="row no-gutters">
 								<div class="col-lg-4 position-relative">
-									<img src="/images/galerie/1.jpg" class=img-overlay alt=photo>
+									<img src="/images/servicii/antistatice/1.jpg" class=img-overlay alt=photo>
 								</div>
 								<div class=col-lg-8>
 									<div class="card-body py-11 px-14">
@@ -493,10 +458,10 @@
 						</div>
 					</div>
 					<div class=shuffle-grid-item data-groups=microciment,rasini>
-						<div class="card border-0">
+						<div class="card border-0 rounded">
 							<div class="row no-gutters">
 								<div class="col-lg-4 position-relative">
-									<img src="/images/galerie/1.jpg" class=img-overlay alt=photo>
+									<img src="/images/servicii/terrazzo/1.jpg" class=img-overlay alt=photo>
 								</div>
 								<div class=col-lg-8>
 									<div class="card-body py-11 px-14">
@@ -510,7 +475,7 @@
 						</div>
 					</div>
 					<div class=shuffle-grid-item data-groups=terrazzo,microciment,rasini>
-						<div class="card border-0">
+						<div class="card border-0 rounded">
 							<div class="row no-gutters">
 								<div class="col-lg-4 position-relative">
 									<img src="/images/galerie/1.jpg" class=img-overlay alt=photo>
@@ -527,10 +492,10 @@
 						</div>
 					</div>
 					<div class=shuffle-grid-item data-groups=terrazzo,rasini,microciment>
-						<div class="card border-0">
+						<div class="card border-0 rounded">
 							<div class="row no-gutters">
 								<div class="col-lg-4 position-relative">
-									<img src="/images/galerie/1.jpg" class=img-overlay alt=photo>
+									<img src="/images/servicii/marcaje/1.jpg" class=img-overlay alt=photo>
 								</div>
 								<div class=col-lg-8>
 									<div class="card-body py-11 px-14">
@@ -544,10 +509,10 @@
 						</div>
 					</div>
 					<div class=shuffle-grid-item data-groups=terrazzo>
-						<div class="card border-0">
+						<div class="card border-0 rounded">
 							<div class="row no-gutters">
 								<div class="col-lg-4 position-relative">
-									<img src="/images/galerie/1.jpg" class=img-overlay alt=photo>
+									<img src="/images/servicii/vopsitorie/1.jpg" class=img-overlay alt=photo>
 								</div>
 								<div class=col-lg-8>
 									<div class="card-body py-11 px-14">
@@ -561,7 +526,7 @@
 						</div>
 					</div>
 					<div class=shuffle-grid-item data-groups=rasini>
-						<div class="card border-0">
+						<div class="card border-0 rounded">
 							<div class="row no-gutters">
 								<div class="col-lg-4 position-relative">
 									<img src="/images/galerie/1.jpg" class=img-overlay alt=photo>
@@ -578,10 +543,10 @@
 						</div>
 					</div>
 					<div class=shuffle-grid-item data-groups=microciment,terrazzo>
-						<div class="card border-0">
+						<div class="card border-0 rounded">
 							<div class="row no-gutters">
 								<div class="col-lg-4 position-relative">
-									<img src="/images/galerie/1.jpg" class=img-overlay alt=photo>
+									<img src="/images/servicii/microciment/1.jpg" class=img-overlay alt=photo>
 								</div>
 								<div class=col-lg-8>
 									<div class="card-body py-11 px-14">
@@ -595,10 +560,10 @@
 						</div>
 					</div>
 					<div class=shuffle-grid-item data-groups=microciment,rasini>
-						<div class="card border-0">
+						<div class="card border-0 rounded">
 							<div class="row no-gutters">
 								<div class="col-lg-4 position-relative">
-									<img src="/images/galerie/1.jpg" class=img-overlay alt=photo>
+									<img src="/images/servicii/barrisol/1.jpg" class=img-overlay alt=photo>
 								</div>
 								<div class=col-lg-8>
 									<div class="card-body py-11 px-14">
@@ -612,10 +577,10 @@
 						</div>
 					</div>
 					<div class=shuffle-grid-item data-groups=terrazzo,microciment,rasini>
-						<div class="card border-0">
+						<div class="card border-0 rounded">
 							<div class="row no-gutters">
 								<div class="col-lg-4 position-relative">
-									<img src="/images/galerie/1.jpg" class=img-overlay alt=photo>
+									<img src="/images/servicii/decorative/1.jpg" class=img-overlay alt=photo>
 								</div>
 								<div class=col-lg-8>
 									<div class="card-body py-11 px-14">
@@ -644,7 +609,7 @@
 			<div class="container py-19 py-lg-20">
 				<div class="row vertical-divider-light">
 					<div class="col-12 col-md-6 col-lg-3">
-						<div class="card border-0">
+						<div class="card border-0 rounded">
 							<div class="card-body py-17 px-10 text-center">
 								<div class="card-icon mb-6">
 									<i class="material-icons">calendar_today</i>
@@ -654,7 +619,7 @@
 						</div>
 					</div>
 					<div class="col-12 col-md-6 col-lg-3">
-						<div class="card border-0">
+						<div class="card border-0 rounded">
 							<div class="card-body py-17 px-10 text-center">
 								<div class="card-icon mb-6">
 									<i class="material-icons">build</i>
@@ -664,7 +629,7 @@
 						</div>
 					</div>
 					<div class="col-12 col-md-6 col-lg-3">
-						<div class="card border-0">
+						<div class="card border-0 rounded">
 							<div class="card-body py-17 px-10 text-center">
 								<div class="card-icon mb-6">
 									<i class="material-icons">square_foot</i>
@@ -674,7 +639,7 @@
 						</div>
 					</div>
 					<div class="col-12 col-md-6 col-lg-3">
-						<div class="card border-0">
+						<div class="card border-0 rounded">
 							<div class="card-body py-17 px-10 text-center">
 								<div class="card-icon mb-6">
 									<i class="material-icons">verified</i>
@@ -698,173 +663,80 @@
 						<small class="fs-1 font-family-secondary text-uppercase font-weight-bold letter-spacing-caption text-muted">Proiecte Epoxitotal</small>
 						<h3>Ultimile lucrari</h3>
 					</div>
-					<div class="d-none d-md-block">
-						<div class="btn-group">
-							<div class="radio-buttons-group border-0" data-toggle="shuffle-grid" data-target="#projects-grid">
-								<button class="btn btn-light selected" data-value="all">Toate</button>
-								<button class="btn btn-light" data-value="haircut">Terrazzo</button>
-								<button class="btn btn-light" data-value="makeup">Microciment</button>
-							</div>
-						</div>
-					</div>
 				</div>
 				<div class="shuffle-grid shuffle-grid-gap-14 shuffle-grid-cols-1 shuffle-grid-cols-md-2 shuffle-grid-cols-xl-4 mt-14 shuffle" id="projects-grid" style="position: relative; overflow: hidden; height: 1920px; transition: height 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;">
 
 
 					<div class="shuffle-grid-item shuffle-item shuffle-item--visible" data-groups="all" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;">
-						<div class="card card-square bg-transparent border-0">
+						<div class="card card-square bg-transparent border-0 rounded">
 							<div class="card-bg" style="background-image: url(/images/landing/gallery/1.jpg)">
 							</div>
-							<div class="card-bg card-bg-hover" style="background-color: rgba(0,0,0,.6)">
-							</div>
-							<div class="card-body card-body-hover text-white d-flex align-items-center justify-content-center">
-								<i class="material-icons fs-8">zoom_in</i>
-							</div>
-							<a href="#" class="card-link-overlay">
-							</a>
 						</div>
 					</div>
 					<div class="shuffle-grid-item shuffle-item shuffle-item--visible" data-groups="all" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;">
-						<div class="card card-square bg-transparent border-0">
+						<div class="card card-square bg-transparent border-0 rounded">
 							<div class="card-bg" style="background-image: url(/images/landing/gallery/2.jpg)">
 							</div>
-							<div class="card-bg card-bg-hover" style="background-color: rgba(0,0,0,.6)">
-							</div>
-							<div class="card-body card-body-hover text-white d-flex align-items-center justify-content-center">
-								<i class="material-icons fs-8">zoom_in</i>
-							</div>
-							<a href="#" class="card-link-overlay">
-							</a>
 						</div>
 					</div>
 					<div class="shuffle-grid-item shuffle-item shuffle-item--visible" data-groups="all" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;">
-						<div class="card card-square bg-transparent border-0">
+						<div class="card card-square bg-transparent border-0 rounded">
 							<div class="card-bg" style="background-image: url(/images/landing/gallery/3.jpg)">
 							</div>
-							<div class="card-bg card-bg-hover" style="background-color: rgba(0,0,0,.6)">
-							</div>
-							<div class="card-body card-body-hover text-white d-flex align-items-center justify-content-center">
-								<i class="material-icons fs-8">zoom_in</i>
-							</div>
-							<a href="#" class="card-link-overlay">
-							</a>
 						</div>
 					</div>
 					<div class="shuffle-grid-item shuffle-item shuffle-item--visible" data-groups="all" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;">
-						<div class="card card-square bg-transparent border-0">
+						<div class="card card-square bg-transparent border-0 rounded">
 							<div class="card-bg" style="background-image: url(/images/landing/gallery/4.jpg)">
 							</div>
-							<div class="card-bg card-bg-hover" style="background-color: rgba(0,0,0,.6)">
-							</div>
-							<div class="card-body card-body-hover text-white d-flex align-items-center justify-content-center">
-								<i class="material-icons fs-8">zoom_in</i>
-							</div>
-							<a href="#" class="card-link-overlay">
-							</a>
 						</div>
 					</div>
 					<div class="shuffle-grid-item shuffle-item shuffle-item--visible" data-groups="all" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;">
-						<div class="card card-square bg-transparent border-0">
+						<div class="card card-square bg-transparent border-0 rounded">
 							<div class="card-bg" style="background-image: url(/images/landing/gallery/5.jpg)">
 							</div>
-							<div class="card-bg card-bg-hover" style="background-color: rgba(0,0,0,.6)">
-							</div>
-							<div class="card-body card-body-hover text-white d-flex align-items-center justify-content-center">
-								<i class="material-icons fs-8">zoom_in</i>
-							</div>
-							<a href="#" class="card-link-overlay">
-							</a>
 						</div>
 					</div>
 					<div class="shuffle-grid-item shuffle-item shuffle-item--visible" data-groups="all" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;">
-						<div class="card card-square bg-transparent border-0">
+						<div class="card card-square bg-transparent border-0 rounded">
 							<div class="card-bg" style="background-image: url(/images/landing/gallery/6.jpg)">
 							</div>
-							<div class="card-bg card-bg-hover" style="background-color: rgba(0,0,0,.6)">
-							</div>
-							<div class="card-body card-body-hover text-white d-flex align-items-center justify-content-center">
-								<i class="material-icons fs-8">zoom_in</i>
-							</div>
-							<a href="#" class="card-link-overlay">
-							</a>
 						</div>
 					</div>
 					<div class="shuffle-grid-item shuffle-item shuffle-item--visible" data-groups="all" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;">
-						<div class="card card-square bg-transparent border-0">
+						<div class="card card-square bg-transparent border-0 rounded">
 							<div class="card-bg" style="background-image: url(/images/landing/gallery/7.jpg)">
 							</div>
-							<div class="card-bg card-bg-hover" style="background-color: rgba(0,0,0,.6)">
-							</div>
-							<div class="card-body card-body-hover text-white d-flex align-items-center justify-content-center">
-								<i class="material-icons fs-8">zoom_in</i>
-							</div>
-							<a href="#" class="card-link-overlay">
-							</a>
 						</div>
 					</div>
 					<div class="shuffle-grid-item shuffle-item shuffle-item--visible" data-groups="all" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;">
-						<div class="card card-square bg-transparent border-0">
+						<div class="card card-square bg-transparent border-0 rounded">
 							<div class="card-bg" style="background-image: url(/images/landing/gallery/8.jpg)">
 							</div>
-							<div class="card-bg card-bg-hover" style="background-color: rgba(0,0,0,.6)">
-							</div>
-							<div class="card-body card-body-hover text-white d-flex align-items-center justify-content-center">
-								<i class="material-icons fs-8">zoom_in</i>
-							</div>
-							<a href="#" class="card-link-overlay">
-							</a>
 						</div>
 					</div>
 					<div class="shuffle-grid-item shuffle-item shuffle-item--visible" data-groups="all" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;">
-						<div class="card card-square bg-transparent border-0">
+						<div class="card card-square bg-transparent border-0 rounded">
 							<div class="card-bg" style="background-image: url(/images/landing/gallery/9.jpg)">
 							</div>
-							<div class="card-bg card-bg-hover" style="background-color: rgba(0,0,0,.6)">
-							</div>
-							<div class="card-body card-body-hover text-white d-flex align-items-center justify-content-center">
-								<i class="material-icons fs-8">zoom_in</i>
-							</div>
-							<a href="#" class="card-link-overlay">
-							</a>
 						</div>
 					</div>
 					<div class="shuffle-grid-item shuffle-item shuffle-item--visible" data-groups="all" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;">
-						<div class="card card-square bg-transparent border-0">
+						<div class="card card-square bg-transparent border-0 rounded">
 							<div class="card-bg" style="background-image: url(/images/landing/gallery/10.jpg)">
 							</div>
-							<div class="card-bg card-bg-hover" style="background-color: rgba(0,0,0,.6)">
-							</div>
-							<div class="card-body card-body-hover text-white d-flex align-items-center justify-content-center">
-								<i class="material-icons fs-8">zoom_in</i>
-							</div>
-							<a href="#" class="card-link-overlay">
-							</a>
 						</div>
 					</div>
 					<div class="shuffle-grid-item shuffle-item shuffle-item--visible" data-groups="all" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;">
-						<div class="card card-square bg-transparent border-0">
+						<div class="card card-square bg-transparent border-0 rounded">
 							<div class="card-bg" style="background-image: url(/images/landing/gallery/11.jpg)">
 							</div>
-							<div class="card-bg card-bg-hover" style="background-color: rgba(0,0,0,.6)">
-							</div>
-							<div class="card-body card-body-hover text-white d-flex align-items-center justify-content-center">
-								<i class="material-icons fs-8">zoom_in</i>
-							</div>
-							<a href="#" class="card-link-overlay">
-							</a>
 						</div>
 					</div>
 					<div class="shuffle-grid-item shuffle-item shuffle-item--visible" data-groups="all" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;">
-						<div class="card card-square bg-transparent border-0">
+						<div class="card card-square bg-transparent border-0 rounded">
 							<div class="card-bg" style="background-image: url(/images/landing/gallery/12.jpg)">
 							</div>
-							<div class="card-bg card-bg-hover" style="background-color: rgba(0,0,0,.6)">
-							</div>
-							<div class="card-body card-body-hover text-white d-flex align-items-center justify-content-center">
-								<i class="material-icons fs-8">zoom_in</i>
-							</div>
-							<a href="#" class="card-link-overlay">
-							</a>
 						</div>
 					</div>
 
@@ -1211,14 +1083,14 @@
 
 				<div class="col-md-6 left">
 
-<div class="gmap pt-4">
-	<div class="gmap-embed">
-		<div class="gmap-embed-sizing-helper">
-		</div>
-		<div class="gmap-embed-inner"
-		data-options="{&quot;center&quot;:{&quot;lat&quot;:44.425840,&quot;lng&quot;:26.016470}}">
-	</div>
-</div>
+					<div class="gmap pt-4">
+						<div class="gmap-embed">
+							<div class="gmap-embed-sizing-helper">
+							</div>
+							<div class="gmap-embed-inner"
+							data-options="{&quot;center&quot;:{&quot;lat&quot;:44.425840,&quot;lng&quot;:26.016470}}">
+						</div>
+					</div>
 
 				</div>
 
@@ -1316,6 +1188,17 @@
 	</section>
 
 
+<div class="btn-group-vertical back-to-top">
+	<a href="#" class="btn btn-primary btn-round aos-init aos-animate" data-smooth-scroll="" data-aos="fade-up" data-aos-offset="2000" data-aos-mirror="true" data-aos-once="false">
+		<i class='material-icons'>phone</i>
+	</a>
+	<a href="#" class="btn btn-primary btn-round aos-init aos-animate" data-smooth-scroll="" data-aos="fade-up" data-aos-offset="2000" data-aos-mirror="true" data-aos-once="false">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="2em" height="2em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3z" fill="white"/></svg>
+	</a>
+	<a href="#" class="btn btn-primary btn-round aos-init aos-animate" data-smooth-scroll="" data-aos="fade-up" data-aos-offset="2000" data-aos-mirror="true" data-aos-once="false">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="2em" height="2em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><path d="M941.3 296.1a112.3 112.3 0 0 0-79.2-79.3C792.2 198 512 198 512 198s-280.2 0-350.1 18.7A112.12 112.12 0 0 0 82.7 296C64 366 64 512 64 512s0 146 18.7 215.9c10.3 38.6 40.7 69 79.2 79.3C231.8 826 512 826 512 826s280.2 0 350.1-18.8c38.6-10.3 68.9-40.7 79.2-79.3C960 658 960 512 960 512s0-146-18.7-215.9zM423 646V378l232 133l-232 135z" fill="white"/></svg>
+	</a>
+</div>
 
 	<script src='/assets/js/vendor.js'>
 
@@ -1335,7 +1218,17 @@
 	</script>
 
 
-
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(window).scroll(function() {
+				if ($(document).scrollTop() > 50) {
+					$('#header-nav').addClass('scrolled');
+				} else {
+					$('#header-nav').removeClass('scrolled');
+				}
+			});
+		});
+	</script>
 
 
 </body>
