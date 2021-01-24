@@ -608,108 +608,6 @@
 
 
 
-
-<section>
-
-	<div class="container py-19 py-lg-20">
-
-		<div class="row vertical-divider-light">
-
-			<div class="col-12 col-md-6 col-lg-3">
-
-				<div class="card border-0">
-
-					<div class="card-body py-17 px-10 text-center">
-
-						<div class="card-icon mb-6">
-
-							<i class="material-icons">
-							calendar_today</i>
-
-						</div>
-
-						<div class="fs-1 lh-1 my-5 font-family-secondary text-uppercase font-weight-bold letter-spacing-caption">
-						8 ani experienta</div>
-
-					</div>
-
-				</div>
-
-			</div>
-
-			<div class="col-12 col-md-6 col-lg-3">
-
-				<div class="card border-0">
-
-					<div class="card-body py-17 px-10 text-center">
-
-						<div class="card-icon mb-6">
-
-							<i class="material-icons">
-							build</i>
-
-						</div>
-
-						<div class="fs-1 lh-1 my-5 font-family-secondary text-uppercase font-weight-bold letter-spacing-caption">
-						300 proiecte</div>
-
-					</div>
-
-				</div>
-
-			</div>
-
-			<div class="col-12 col-md-6 col-lg-3">
-
-				<div class="card border-0">
-
-					<div class="card-body py-17 px-10 text-center">
-
-						<div class="card-icon mb-6">
-
-							<i class="material-icons">
-							square_foot</i>
-
-						</div>
-
-						<div class="fs-1 lh-1 my-5 font-family-secondary text-uppercase font-weight-bold letter-spacing-caption">
-						150 000 mp finalizati</div>
-
-					</div>
-
-				</div>
-
-			</div>
-
-			<div class="col-12 col-md-6 col-lg-3">
-
-				<div class="card border-0">
-
-					<div class="card-body py-17 px-10 text-center">
-
-						<div class="card-icon mb-6">
-
-							<i class="material-icons">
-							verified</i>
-
-						</div>
-
-						<div class="fs-1 lh-1 my-5 font-family-secondary text-uppercase font-weight-bold letter-spacing-caption">
-						garantie</div>
-
-					</div>
-
-				</div>
-
-			</div>
-
-		</div>
-
-	</div>
-
-</section>
-
-
 <script
 src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
@@ -932,14 +830,16 @@ crossorigin="anonymous"></script>
             <strong class="mx-auto">Trimite-ne un mesaj</strong>
           </div>
 
-          <form>
+          <form action="https://formspree.io/f/xaylvpkk"
+  method="POST">
             <div class="container">
 
 
             <div class="form-group">
               <label for="exampleFormControlInput1">Email address</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="_replyto">
             </div>
+
             <div class="form-group">
               <label for="exampleFormControlSelect1">Example select</label>
               <select class="form-control" id="exampleFormControlSelect1">
@@ -967,12 +867,13 @@ crossorigin="anonymous"></script>
 
 
             </div>
+            <div class="modal-body">
+              <button class="btn btn-block btn-outline-dark" type="submit">Cere oferta</button>
+            </div>
           </form>
 
             <!-- Buttons -->
-            <div class="modal-body">
-              <a class="btn btn-block btn-outline-dark" href="./shopping-cart.html">Cere oferta</a>
-            </div>
+
 
           </div>
 
