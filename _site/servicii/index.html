@@ -50,9 +50,9 @@
 
 								<a href="tel:0762369009" class="text-white">
 
-									<i class='material-icons fs-1'>
+<!-- 									<i class='material-icons fs-1'>
 									phone</i>
-								0762369009</a>
+								0762369009</a> -->
 
 								<a href="mailto:oferta@epoxitotal.ro" class="text-white">
 
@@ -226,11 +226,11 @@
 			<h1 class="fs-10 fs-lg-11 mt-6 mb-16 font-weight-bold text-white">
 			Servicii</h1>
 
-			<a href='/contact' class="btn btn-lg btn-primary">
+			<a href='http://localhost:4000/contact' class="btn btn-lg btn-primary">
 			Cere oferta</a>
 
 		</div>
-					<a href="#" class="text-center fixed-bottom mb-8 text-white" data-toggle="smooth-scroll" data-target="#second_div">
+					<a href="#" class="text-center mb-8 text-white" data-toggle="smooth-scroll" style="bottom:0;" data-target="#second_div">
 
 						<div class="btn btn-outline-light btn-square">
 					    	<i class="hero-material-icons align-middle" style="font-size: 30px;">arrow_downward</i>
@@ -599,7 +599,7 @@
 
 		<div class="mt-19 mt-lg-20 text-center">
 
-			<a href='/contact' class="btn btn-lg btn-primary">
+			<a href='http://localhost:4000/contact' class="btn btn-lg btn-primary">
 			Cere oferta</a>
 
 		</div>
@@ -716,7 +716,7 @@ crossorigin="anonymous"></script>
 							<i class="material-icons">location_on</i>
 						</div>
 						<div class="fs-1 lh-1 my-5 font-family-secondary text-uppercase font-weight-bold letter-spacing-caption text-muted">Bucuresti</div>
-						<p class="mb-0 text-body">Bld. Timisoara 135</p>
+						<p class="mb-0 text-body">Bld. Timisoara 139</p>
 					</div>
 				</div>
 			</div>
@@ -739,9 +739,9 @@ crossorigin="anonymous"></script>
 						</div>
 						<div class="fs-1 lh-1 my-5 font-family-secondary text-uppercase font-weight-bold letter-spacing-caption text-muted">Program</div>
 						<p class="mb-0 text-body">
-						Luni - Vineri: 6:00 - 9:00<br>
-						Sambata: 6:00 - 12:00
-					    </p>
+							Luni - Vineri: 6:00 - 9:00<br>
+							Sambata: 6:00 - 12:00
+						</p>
 					</div>
 				</div>
 			</div>
@@ -758,14 +758,14 @@ crossorigin="anonymous"></script>
 			</div>
 		</div>
 	</div>
-<div class="gmap">
-	<div class="gmap-embed">
-		<div class="gmap-embed-sizing-helper" style="padding-top: 500px;">
+	<div class="gmap">
+		<div class="gmap-embed">
+			<div class="gmap-embed-sizing-helper" style="padding-top: 500px;">
+			</div>
+			<div class="gmap-embed-inner"
+			data-options="{&quot;center&quot;:{&quot;lat&quot;:44.425840,&quot;lng&quot;:26.016470}}">
 		</div>
-		<div class="gmap-embed-inner"
-		data-options="{&quot;center&quot;:{&quot;lat&quot;:44.425840,&quot;lng&quot;:26.016470}}">
 	</div>
-</div>
 </div>
 </div>
 </div>
@@ -776,32 +776,34 @@ crossorigin="anonymous"></script>
 
 			<div class="col-12 col-md-6 col-lg-5 mb-14 mb-md-0">
 				<div class="d-flex align-items-center justify-content-center justify-content-md-start">
-					<a href="index.html" class="footer-brand">EPOXITOTAL</a>
+					<a href="index.html" class="footer-brand">
+						<img src='/images/logo.png' width='150px'>
+					</a>
 				</div>
 			</div>
 
 
 
-					<div class="col-12 col-lg-2 text-center d-none d-lg-block">
-						<a class="btn btn-block" data-toggle="modal" href="#modalShoppingCart">
-							Cere oferta
-						</a>
-					</div>
-
-
-					<div class="col-12 col-md-6 col-lg-5 text-center text-md-right">
-						<ul class="footer-menu">
-							<li>
-								<a href="#">Privacy Policy</a>
-							</li>
-							<li>
-								<a href="#">Terms &amp; Conditions</a>
-							</li>
-						</ul>
-					</div>
-				</div>
+			<div class="col-12 col-lg-2 text-center d-none d-lg-block">
+				<a class="btn btn-block" data-toggle="modal" href="#modalShoppingCart">
+					<span class="font-weight-bold fs-15" style="font-size: 1.3em;">Cere oferta</span>
+				</a>
 			</div>
-		</section>
+
+
+			<div class="col-12 col-md-6 col-lg-5 text-center text-md-right">
+				<ul class="footer-menu">
+					<li>
+						<a href="#">Privacy Policy</a>
+					</li>
+					<li>
+						<a href="#">Terms &amp; Conditions</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
 
 
 
