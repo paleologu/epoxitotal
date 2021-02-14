@@ -564,46 +564,51 @@
             <strong class="mx-auto">Trimite-ne un mesaj</strong>
           </div>
 
-          <form action="https://formspree.io/f/xaylvpkk"
-  method="POST">
+
+          <form action="https://formspree.io/f/mdopjbpn" method="POST">
             <div class="container">
+              <div class="form-group">
+                <label for="subject-input">Subiect</label>
+                <input type="text" name="subject" id="subject-input">
+              </div>
+              <div class="form-group">
+                <label for="name-input">Nume</label>
+                <input type="text" name="name" id="name-input">
+              </div>
 
+              <div class="form-group">
+              <label for="replyto">Email</label>
+              <input type="email" name="_replyto" id="replyto">
+              </div>
 
-            <div class="form-group">
-              <label for="exampleFormControlInput1">Email address</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="_replyto">
+               <div class="form-group">
+                <label for="phone-input">Numar de Telefon</label>
+                <input type="text" name="subject" id="phone-input">
+              </div>             
+
+               <div class="form-group">
+                <label for="lucrare-input">Tip de Lucrare</label>
+                <input type="text" name="tip_lucrare" id="lucrare-input">
+              </div>             
+
+               <div class="form-group">
+                <label for="suprafata-input">Suprafata de lucru (MP)</label>
+                <input type="text" name="suprafata" id="suprafata-input">
+              </div>       
+
+               <div class="form-group">
+                <label for="message-input">Mesaj</label>
+                <input type="text" name="mesaj" id="message-input">
+              </div>             
+
+              <input type="submit" value="Trimite">
             </div>
 
-            <div class="form-group">
-              <label for="exampleFormControlSelect1">Example select</label>
-              <select class="form-control" id="exampleFormControlSelect1">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlSelect2">Example multiple select</label>
-              <select multiple class="form-control" id="exampleFormControlSelect2">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlTextarea1">Example textarea</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
 
-
-            </div>
             <div class="modal-body">
               <button class="btn btn-block btn-outline-dark" type="submit">Cere oferta</button>
             </div>
+
           </form>
 
             <!-- Buttons -->
