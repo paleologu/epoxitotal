@@ -226,11 +226,30 @@
 			<h1 class="fs-10 fs-lg-11 mt-6 mb-16 font-weight-bold text-white">
 			Servicii</h1>
 
+			<!-- Visible on mobile -->
+			<div class="d-block d-sm-none">
 			<a href='http://localhost:4000/contact' class="btn btn-lg btn-primary">
 			Cere oferta</a>
+		    </div>
+		    <!-- Visible everywhere except mobile -->
+			<div class="d-none d-sm-block">
+            <a class="btn btn-ghost border-2 px-md-8 m-2 m-md-4" href="shop.html">Dresses</a>
+            <a class="btn btn-ghost border-2 px-md-8 m-2 m-md-4" href="shop.html">Tops & T-Shirts</a>
+            <a class="btn btn-ghost border-2 px-md-8 m-2 m-md-4" href="shop.html">Blouses & Shirts</a>
+            <a class="btn btn-ghost border-2 px-md-8 m-2 m-md-4" href="shop.html">Jeans & Trousers</a>
+            <a class="btn btn-ghost border-2 px-md-8 m-2 m-md-4" href="shop.html">Jeans & Trousers</a>
+            <a class="btn btn-ghost border-2 px-md-8 m-2 m-md-4" href="shop.html">Shoes</a>
+            <a class="btn btn-ghost border-2 px-md-8 m-2 m-md-4" href="shop.html">Acessories</a>
+            <a class="btn btn-ghost border-2 px-md-8 m-2 m-md-4" href="shop.html">Coats & Jakets</a>
+            <a class="btn btn-ghost border-2 px-md-8 m-2 m-md-4" href="shop.html">Shorts & Skirts</a>
+            </div>
+
+
+
+
 
 		</div>
-					<a href="#" class="text-center mb-8 text-white" data-toggle="smooth-scroll" style="bottom:0;" data-target="#second_div">
+					<a href="#" class="text-center mb-8 text-white d-none d-sm-block" data-toggle="smooth-scroll" style="bottom:0;" data-target="#second_div">
 
 						<div class="btn btn-outline-light btn-square">
 					    	<i class="hero-material-icons align-middle" style="font-size: 30px;">arrow_downward</i>
@@ -248,7 +267,7 @@
 
 	<div class="section-content">
 
-		<div class="d-flex justify-content-center">
+		<div class="d-flex justify-content-center d-block d-sm-none">
 
 			<div class="nav nav-tabs radio-buttons-group border-0 shadow-sm rounded">
 
@@ -794,10 +813,13 @@ crossorigin="anonymous"></script>
 			<div class="col-12 col-md-6 col-lg-5 text-center text-md-right">
 				<ul class="footer-menu">
 					<li>
-						<a href="#">Privacy Policy</a>
+						<a href='/despre-noi'>Despre Noi</a>
 					</li>
 					<li>
-						<a href="#">Terms &amp; Conditions</a>
+						<a href='/servicii'>Servicii</a>
+					</li>					
+					<li>
+						<a href="#">Termeni</a>
 					</li>
 				</ul>
 			</div>
