@@ -65,7 +65,8 @@
 						</span>
 
 
-
+<!-- Languages -->
+<!-- 
 						<ul class=navbar-nav>
 
 							<li class='nav-item dropdown dropdown-flat dropdown-flat-primary'>
@@ -90,7 +91,7 @@
 
 							</li>
 
-						</ul>
+						</ul> -->
 
 					</nav>
 
@@ -497,53 +498,25 @@
           </div>
 
 
-          <form action="https://formspree.io/f/mdopjbpn" method="POST">
-            <div class="container">
-              <div class="form-group">
-                <label for="subject-input">Subiect</label>
-                <input type="text" name="subject" id="subject-input">
-              </div>
-              <div class="form-group">
-                <label for="name-input">Nume</label>
-                <input type="text" name="name" id="name-input">
-              </div>
+            <form id="contact-form" class="contact-form" method="post" data-success="Message successfully sent!">
 
-              <div class="form-group">
-              <label for="replyto">Email</label>
-              <input type="email" name="_replyto" id="replyto">
-              </div>
+  <label for="name">Name</label>
+  <input id="name" type="text" name="name" class="field" required autofocus /><br/>
 
-               <div class="form-group">
-                <label for="phone-input">Numar de Telefon</label>
-                <input type="text" name="subject" id="phone-input">
-              </div>             
+  <label for="email">E-mail</label>
+  <input id="email" type="email" name="email" class="field" required /><br/>
 
-               <div class="form-group">
-                <label for="lucrare-input">Tip de Lucrare</label>
-                <input type="text" name="tip_lucrare" id="lucrare-input">
-              </div>             
+  <label for="subject">Subject</label>
+  <input id="subject" type="text" name="subject" class="field" required /><br/>
 
-               <div class="form-group">
-                <label for="suprafata-input">Suprafata de lucru (MP)</label>
-                <input type="text" name="suprafata" id="suprafata-input">
-              </div>       
-
-               <div class="form-group">
-                <label for="message-input">Mesaj</label>
-                <input type="text" name="mesaj" id="message-input">
-              </div>             
-
-              <input type="submit" value="Trimite">
-            </div>
+  <label for="message">Message</label>
+  <textarea id="message" name="message" required ></textarea><br/>
 
 
-            <div class="modal-body">
-              <button class="btn btn-block btn-outline-dark" type="submit">Cere oferta</button>
-            </div>
 
-          </form>
-
-            <!-- Buttons -->
+  <div id="notice" class="notice" data-error="There was an error sending the message, please try again."></div>
+  <button type="submit">Send</button>
+</form>
 
 
           </div>
@@ -572,8 +545,7 @@
 	<script src='/assets/js/home.js'>
 
 	</script>
-
-
+	<script src='/assets/js/contact.js'></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$(window).scroll(function() {
