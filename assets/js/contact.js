@@ -1,11 +1,16 @@
 
 
-function setupForm() {
-  var contactFormHost = 'epoxitotal-contact-form.herokuapp.com',
+
+
+  var contactFormHost = 'http://epoxitotal-contact-form.herokuapp.com/',
       form = $('#contact-form'),
       notice = form.find('#notice');
+      console.log("Bla");
 
-  if (form.length) {
+
+
+
+
     form.submit(function(ev){
       ev.preventDefault();
 
@@ -31,5 +36,6 @@ function setupForm() {
         }
       });
     });
-  }
-}
+  
+
+
