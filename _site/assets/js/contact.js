@@ -5,6 +5,9 @@
   var contactFormHost = 'http://epoxitotal-contact-form.herokuapp.com/',
       form = $('#contact-form'),
       notice = form.find('#notice');
+
+
+
       console.log("Bla");
 
 
@@ -13,7 +16,7 @@
 
     form.submit(function(ev){
       ev.preventDefault();
-
+      console.log("Bli");
       $.ajax({
         type: 'POST',
         url: contactFormHost + 'send_email',
