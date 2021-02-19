@@ -2,7 +2,7 @@
 
 
 
-  var contactFormHost = 'http://epoxitotalapi.herokuapp.com/',
+  var contactFormHost = 'https://epoxitotalapi.herokuapp.com/',
       form = $('#contact-form'),
       notice = form.find('#notice');
 
