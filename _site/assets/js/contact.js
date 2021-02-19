@@ -19,7 +19,7 @@
       console.log("Bli");
       $.ajax({
         type: 'POST',
-        url: contactFormHost + 'messages/create',
+        url: contactFormHost + 'messages',
         data: form.serialize(),
         dataType: 'json',
         success: function(response) {
