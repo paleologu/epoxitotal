@@ -2,7 +2,7 @@
 
 
 
-  var contactFormHost = 'http://epoxitotal-contact-form.herokuapp.com/',
+  var contactFormHost = 'http://epoxitotalapi.herokuapp.com/',
       form = $('#contact-form'),
       notice = form.find('#notice');
 
@@ -19,7 +19,7 @@
       console.log("Bli");
       $.ajax({
         type: 'POST',
-        url: contactFormHost + 'send_email',
+        url: contactFormHost + 'messages/create',
         data: form.serialize(),
         dataType: 'json',
         success: function(response) {
